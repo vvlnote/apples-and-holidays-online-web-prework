@@ -73,7 +73,7 @@ def all_supplies_in_holidays(holiday_hash)
       str_arr = []
       if holiday_str.include? "_"
         str_arr = holiday_str.split("_")
-        str_arr.collect do |x|
+        str_arr = str_arr.collect do |x|
           x = x.capitalize
         end
         holiday_str = str_arr.join(" ")
